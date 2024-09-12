@@ -7,6 +7,8 @@ using namespace std;
 
 /*
 
+//Para el if, podemos tener dos condiciones separadas por or de la manera: if(cond1||cond2)
+
 //Operaciones números
 
 int main(){
@@ -160,6 +162,8 @@ int main(){
 }
 */
 
+//escaleno
+
 int main(){
 
     int a, b, c;
@@ -172,11 +176,11 @@ int main(){
     
     theta = acos((pow(b,2) + pow(c,2) - pow(a,2))/(2*b*c));
 
-    y = c * sin(theta)
+    y = c * sin(theta);
 
-    x = c * cos(theta)
+    x = c * cos(theta);
 
-    area = x * y / 2
+    area = x * y / 2;
 
     cout <<area<< endl;
 
