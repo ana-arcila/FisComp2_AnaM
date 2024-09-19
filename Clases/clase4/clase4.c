@@ -165,7 +165,9 @@ int main(){
     cout <<"Ingrese el numero limite:"<< endl;
     cin >> lim;
 
-    for (i=1; i<=lim; i++){
+    cout <<1<< endl;
+
+    for (i=2; i<=lim; i++){
         if (primos(i, lim)){
             cout <<i<< endl;
         }
@@ -179,16 +181,18 @@ bool primos(int i, int lim){
 
     n=0;
 
-    for (j=1; j<= i; j++){
-        m = i%j;
-        n+=m;
-    }
-    
-
-    if (n=!0){
-        return true;
-    }
-    else{
+    if (i == 1 || 0){
         return false;
     }
+
+    for (j=2; j<= i; j++){
+        if(i%j == 0){
+            n=1;
+            return false;
+        
+        }
+    
+    }
+    return true;
+    
 }
